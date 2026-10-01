@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#e91e63" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Suivi Alissia" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Suivi Alissia</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">PROGRAMME & SUIVI</div>
+        <h1>Suivi Alissia</h1>
+      </div>
+      <button id="todayBtn" class="icon-btn" title="Aujourd'hui">Aujourd’hui</button>
+    </header>
+
+    <main id="app"></main>
+
+    <nav class="bottom-nav" aria-label="Navigation">
+      <button data-view="today" class="nav-btn active"><span>🏠</span><small>Aujourd’hui</small></button>
+      <button data-view="program" class="nav-btn"><span>🍽️</span><small>Programme</small></button>
+      <button data-view="tracking" class="nav-btn"><span>✅</span><small>Suivi</small></button>
+      <button data-view="progress" class="nav-btn"><span>📈</span><small>Progrès</small></button>
+      <button data-view="settings" class="nav-btn"><span>⚙️</span><small>Réglages</small></button>
+    </nav>
+  </div>
+
+  <template id="toastTpl">
+    <div class="toast"></div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
